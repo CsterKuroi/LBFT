@@ -18,6 +18,6 @@ python3 tx.py
 ```
 
 ## TODO
-create_tx
+1.create_tx
 
-vote
+2.vote
