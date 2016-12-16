@@ -26,7 +26,8 @@ comm7 = comm.Create(group7)
 comm8 = comm.Create(group8)
 comm9 = comm.Create(group9)
 
-if 0<=comm_rank<=3: 
+if 0<=comm_rank<=3:
+    start = MPI.Wtime()
     data=[comm_rank]
     comm.send(data,dest=4)
     comm.send(data,dest=5)
@@ -48,6 +49,8 @@ if 0<=comm_rank<=3:
     print ('rank %d :receive from rank5'%comm_rank,data)
     if data == data1:
         print ('rank %d :Get votes'%comm_rank,data)
+    stop = MPI.Wtime()
+    print("rank %d time:%lfs\n"%(comm_rank,stop-start))
 
 if 4<=comm_rank<=5:
     data=comm.recv(source=0)
