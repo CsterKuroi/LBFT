@@ -5,16 +5,16 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain [Proof of Concept]
 ## Quick Start
 requires = [
 
-    'MPICH2',
+   'Python 3.5+'
+   
+   'MPICH2',
     
-    'mpi4py',
+   'mpi4py',
     
-    'bigchaindb-driver',
+   'bigchaindb-driver',
     
-    'bigchaindb',
-    
-    'Python 3.5+'
-    
+   'bigchaindb',
+        
 ]
 
 
