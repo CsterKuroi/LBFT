@@ -18,6 +18,24 @@ requires = [
 mpirun -np 7 python3 tx124.py
 python3 tx.py
 ```
+## Task List
+- [x] topology
+
+- [x] data transmission
+
+- [x] create_tx
+
+- [x] create_block
+
+- [ ] validate the transaction
+
+- [ ] validate the block
+
+- [ ] scalability
+
+- [ ] data storage
+
+- [ ] quota
 
 ## Output
 ```
