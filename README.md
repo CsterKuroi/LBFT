@@ -16,7 +16,6 @@ requires = [
 
 ```
 mpirun -np 7 python3 tx124.py
-python3 tx.py
 ```
 ## Task List
 - [x] topology
