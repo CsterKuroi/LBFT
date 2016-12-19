@@ -13,11 +13,8 @@ requires = [
 
 
 ```
-mpirun -np 7 python3 vote124.py
+mpirun -np 7 python3 tx124.py
 python3 tx.py
 ```
 
-## TODO
-1.create_tx
 
-2.vote
