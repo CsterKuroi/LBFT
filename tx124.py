@@ -95,29 +95,33 @@ if 4<=comm_rank<=5:
 
 if comm_rank == 6:
     ids = []
-    data=comm.recv(source=4)
+    data1=comm.recv(source=4)
 #    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
 #    print ('rank %d :receive from rank5:'%comm_rank,data)
-    ids.append(data)
+    if data == data1 :
+        ids.append(data)
 
-    data=comm.recv(source=4)
+    data1=comm.recv(source=4)
 #    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
 #    print ('rank %d :receive from rank5:'%comm_rank,data)
-    ids.append(data)
+    if data == data1 :
+        ids.append(data)
 
-    data=comm.recv(source=4)
+    data1=comm.recv(source=4)
 #    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
 #    print ('rank %d :receive from rank5:'%comm_rank,data)
-    ids.append(data)
+    if data == data1 :
+        ids.append(data)
 
-    data=comm.recv(source=4)
+    data1=comm.recv(source=4)
 #    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
 #    print ('rank %d :receive from rank5:'%comm_rank,data)
-    ids.append(data)
+    if data == data1 :
+        ids.append(data)
 
     print('block:',ids)
     comm.send(ids,dest=4)
