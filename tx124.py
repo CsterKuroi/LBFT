@@ -39,6 +39,10 @@ if 0<=comm_rank<=3:
 #    print ('rank %d :receive from rank5'%comm_rank,data)
     if data == data1:
         print ('rank %d :Get block'%comm_rank,data)
+        for ctx in data:
+            if not tx.validate(ctx):
+                print('rank %d :InvalidSignature'%comm_rank)
+                
         comm.send([comm_rank*2],dest=4)
         comm.send([comm_rank*2],dest=5)
 
@@ -70,7 +74,9 @@ if 4<=comm_rank<=5:
     comm.send(data,dest=1)
     comm.send(data,dest=2)
     comm.send(data,dest=3)
-
+    for ctx in data:
+        if not tx.validate(ctx):
+            print('rank %d :InvalidSignature'%comm_rank)
     comm.send([comm_rank*2],dest=6)
 
     data=comm.recv(source=0)
@@ -127,6 +133,11 @@ if comm_rank == 6:
     comm.send(ids,dest=4)
     comm.send(ids,dest=5)
 
+    for ctx in ids:
+        if not tx.validate(ctx):
+            print('rank %d :InvalidSignature'%comm_rank)
+    k=set([comm_rank*2])
+
     data=comm.recv(source=4)
     a=set(data)
 #    print ('rank %d :receive from rank4:'%comm_rank,data)
@@ -161,7 +172,7 @@ if comm_rank == 6:
     data=comm.recv(source=5)
     j=set(data)
 #    print ('rank %d :receive from rank5:'%comm_rank,data)
-    k=set([comm_rank*2])
+    
 
     data=a|b|c|d|e|f|g|h|i|j|k
 #    print('votes:',data)

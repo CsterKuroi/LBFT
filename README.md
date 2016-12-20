@@ -48,9 +48,11 @@ mpirun -np 7 python3 tx124.py
 
 - [x] create_block
 
-- [x] validate the signature
+- [x] validate tx_signature
 
-- [ ] validate the block
+- [ ] validate block
+
+- [x] vote
 
 - [ ] scalability
 
