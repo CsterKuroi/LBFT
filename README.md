@@ -26,7 +26,7 @@ mpirun -np 7 python3 tx124.py
 
 - [x] create_block
 
-- [ ] validate the transaction
+- [x] validate the Signature
 
 - [ ] validate the block
 
