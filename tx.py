@@ -1,5 +1,6 @@
 from bigchaindb_driver import BigchainDB
 from bigchaindb_driver.crypto import generate_keypair
+from bigchaindb.models import Transaction
 
 def create():
     bdb = BigchainDB('http://localhost:9984/api/v1')
@@ -26,6 +27,13 @@ def create():
 #    print(txid)
     return(fulfilled_creation_tx)
 
-if __name__=="__main__":
-    create()
+def validate(ctx):
+    tx_obj = Transaction.from_dict(ctx)
+    input_conditions = []
+    input_conditions.append(tx_obj.conditions[0])
+#    print(tx_obj.fulfillments_valid(input_conditions))
+    return(tx_obj.fulfillments_valid(input_conditions))
 
+if __name__=="__main__":
+    validate(create())
+    
