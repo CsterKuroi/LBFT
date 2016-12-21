@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
 test HOST
+test pull
 Parallel Hello World
 """
 
