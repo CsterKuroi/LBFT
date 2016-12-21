@@ -51,9 +51,11 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 
 - [ ] validate_block
 
-- [ ] node_keypair
+- [ ] node_keypairs
 
 - [x] vote
+
+- [x] votes_list
 
 - [ ] vote_signature
 
