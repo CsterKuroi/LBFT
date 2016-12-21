@@ -35,15 +35,19 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 ## Task List
 - [x] topology
 
-- [x] data_transmission
+- [x] Timeline
 
-- [x] create_tx
+- [x] data_transmission
 
 - [x] create_tx
 
 - [x] tx_signature
 
 - [x] validate tx_signature
+
+- [x] create_block
+
+- [ ] block_chain
 
 - [ ] validate_block
 
