@@ -42,21 +42,29 @@ mpirun -np 7 python3 tx124.py
 ## Task List
 - [x] topology
 
-- [x] data transmission
+- [x] data_transmission
 
 - [x] create_tx
 
-- [x] create_block
+- [x] create_tx
+
+- [x] tx_signature
 
 - [x] validate tx_signature
 
-- [ ] validate block
+- [ ] validate_block
+
+- [ ] node_keypair
 
 - [x] vote
 
+- [ ] vote_signature
+
+- [ ] validate vote_signature
+
 - [ ] scalability
 
-- [ ] data storage
+- [ ] data_storage
 
 - [ ] quota
 
