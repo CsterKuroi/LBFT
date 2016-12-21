@@ -85,229 +85,236 @@ mpirun -np 7 python3 tx124.py
 ```
 block: [
     {
-        'version': 1,
         'transaction': {
             'asset': {
                 'updatable': False,
-                'id': '5f811a71-a02e-45fd-82b2-e29264cc6c37',
-                'divisible': False,
-                'refillable': False,
-                'data': {
-                    'bicycle': {
-                        'manufacturer': 'bkfab',
-                        'serial_number': 'abcd1234'
-                    }
-                }
-            },
-            'conditions': [
-                {
-                    'owners_after': [
-                        '3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs'
-                    ],
-                    'cid': 0,
-                    'condition': {
-                        'uri': 'cc: 4: 20: JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKo: 96',
-                        'details': {
-                            'public_key': '3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs',
-                            'signature': None,
-                            'type': 'fulfillment',
-                            'bitmask': 32,
-                            'type_id': 4
-                        }
-                    },
-                    'amount': 1
-                }
-            ],
-            'metadata': {
-                'data': {
-                    'planet': 'earth'
-                },
-                'id': '372f2c14-fbbd-4cb5-90db-6713610f45e2'
-            },
-            'fulfillments': [
-                {
-                    'input': None,
-                    'owners_before': [
-                        '3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs'
-                    ],
-                    'fulfillment': 'cf: 4: JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKodWMC0w9kkRFIvmw9AOSvTGdu4YR6KOYN_Y8oWsEinumNNpf8YD8mYPTn0zjzjA4iVnyh_9EKckbmOkED88YcF',
-                    'fid': 0
-                }
-            ],
-            'operation': 'CREATE'
-        },
-        'id': '7858420600dc8adc991491e49d93006d38b9cdc655f62eacaa1a6b745e438231'
-    },
-    {
-        'version': 1,
-        'transaction': {
-            'asset': {
+                'id': '1879d4ca-19a5-428c-8f5e-7f8f0d11df49',
                 'data': {
                     'bicycle': {
                         'manufacturer': 'bkfab',
                         'serial_number': 'abcd1234'
                     }
                 },
-                'updatable': False,
                 'divisible': False,
-                'id': '5108d68e-3386-487d-a5ca-bfcf068a7727',
                 'refillable': False
             },
-            'conditions': [
-                {
-                    'owners_after': [
-                        'C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw'
-                    ],
-                    'cid': 0,
-                    'condition': {
-                        'uri': 'cc: 4: 20: pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04: 96',
-                        'details': {
-                            'type_id': 4,
-                            'public_key': 'C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw',
-                            'signature': None,
-                            'bitmask': 32,
-                            'type': 'fulfillment'
-                        }
-                    },
-                    'amount': 1
-                }
-            ],
+            'operation': 'CREATE',
             'metadata': {
+                'id': '9e1a50e0-e02e-4221-8094-5172b402a631',
                 'data': {
                     'planet': 'earth'
-                },
-                'id': '5d072559-51c0-45e1-bf2f-a4b604b3cffb'
+                }
             },
             'fulfillments': [
                 {
-                    'input': None,
                     'owners_before': [
-                        'C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw'
+                        '5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'
                     ],
-                    'fulfillment': 'cf: 4: pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04_NngxF-Z9e4s8F78cLr7MZ4TVmO7ezS_WtZFJ2-3TjQWEHL_q36kB0BGW1KR6u3A8CUthRyTWEbFKjeoW9Q8I',
+                    'input': None,
+                    'fulfillment': 'cf: 4: RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslOROyz3FLf64T9akgHcfAv6bNIeaBwiYqKXz7vJI7ar7CV8oQP25sp44TCzxZJBoomMBzNb1HQlL_zMhyHXnlGncN',
                     'fid': 0
                 }
             ],
-            'operation': 'CREATE'
+            'conditions': [
+                {
+                    'owners_after': [
+                        '5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'
+                    ],
+                    'amount': 1,
+                    'condition': {
+                        'uri': 'cc: 4: 20: RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslORM: 96',
+                        'details': {
+                            'type_id': 4,
+                            'type': 'fulfillment',
+                            'signature': None,
+                            'public_key': '5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz',
+                            'bitmask': 32
+                        }
+                    },
+                    'cid': 0
+                }
+            ]
         },
-        'id': '62f607164b394c540219996152e56235eee328add973d1d7ba82e161f4581430'
+        'id': '96d39280816bc7652e577a87c04546ce7ee11d4576f1ae3c07a422ac3ca1f684',
+        'version': 1
     },
     {
-        'version': 1,
         'transaction': {
             'asset': {
+                'updatable': False,
+                'divisible': False,
+                'id': '9560c113-3d61-48d6-b2d2-5d2d6bcc6c08',
                 'data': {
                     'bicycle': {
                         'manufacturer': 'bkfab',
                         'serial_number': 'abcd1234'
                     }
                 },
-                'updatable': False,
-                'divisible': False,
-                'id': '3df08a52-5cab-4697-83f0-b97b9f763a5f',
                 'refillable': False
             },
-            'conditions': [
-                {
-                    'owners_after': [
-                        'G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM'
-                    ],
-                    'cid': 0,
-                    'condition': {
-                        'uri': 'cc: 4: 20: 3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlo: 96',
-                        'details': {
-                            'type_id': 4,
-                            'public_key': 'G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM',
-                            'signature': None,
-                            'bitmask': 32,
-                            'type': 'fulfillment'
-                        }
-                    },
-                    'amount': 1
-                }
-            ],
+            'operation': 'CREATE',
             'metadata': {
+                'id': '1963095e-6615-4433-a434-e6504cdf8137',
                 'data': {
                     'planet': 'earth'
-                },
-                'id': 'e8c51ce4-0ae7-4ff5-a591-6b5472332e23'
+                }
             },
             'fulfillments': [
                 {
-                    'input': None,
                     'owners_before': [
-                        'G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM'
+                        '2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'
                     ],
-                    'fulfillment': 'cf: 4: 3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlqskigHy3nfhHwW-1-PPjqbGdHkJk9kc5PLyIVLsdN5cnpHkfEXIXVMaJP90LPBmBKrXclHJNV1FERgaOMfLN0P',
+                    'input': None,
+                    'fulfillment': 'cf: 4: FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeBtM7rHUTaxuEqZJE-ehxb-wMlEqhsvyHXEu7-745LPEfwDufuTqBOUThP4lhPXTUI8pXVWHnzq0DUFZTIgDNcC',
                     'fid': 0
                 }
             ],
-            'operation': 'CREATE'
+            'conditions': [
+                {
+                    'owners_after': [
+                        '2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'
+                    ],
+                    'amount': 1,
+                    'condition': {
+                        'uri': 'cc: 4: 20: FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeA: 96',
+                        'details': {
+                            'type_id': 4,
+                            'type': 'fulfillment',
+                            'signature': None,
+                            'public_key': '2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR',
+                            'bitmask': 32
+                        }
+                    },
+                    'cid': 0
+                }
+            ]
         },
-        'id': '887f5ead6ab2ff82e6fd3b3089f787e15f422866e318343dd24213654837d85e'
+        'id': '9aaec84aa0ce373793e132d7ab4d4df7cca60150deb6bca695888091c74c7f1b',
+        'version': 1
     },
     {
-        'version': 1,
         'transaction': {
             'asset': {
-                'refillable': False,
                 'updatable': False,
                 'divisible': False,
-                'id': '16f0a24d-4c1c-4cfc-9ef9-37c3cdcbc390',
+                'id': '4bf8d2d2-fc8e-43b8-b851-3b3a5a8e1722',
                 'data': {
                     'bicycle': {
                         'manufacturer': 'bkfab',
                         'serial_number': 'abcd1234'
                     }
-                }
+                },
+                'refillable': False
             },
-            'conditions': [
-                {
-                    'owners_after': [
-                        'DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'
-                    ],
-                    'condition': {
-                        'uri': 'cc: 4: 20: t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiA: 96',
-                        'details': {
-                            'type_id': 4,
-                            'signature': None,
-                            'type': 'fulfillment',
-                            'bitmask': 32,
-                            'public_key': 'DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'
-                        }
-                    },
-                    'cid': 0,
-                    'amount': 1
-                }
-            ],
+            'operation': 'CREATE',
             'metadata': {
+                'id': '01184ca5-9680-402e-ad89-c95145b2c6cb',
                 'data': {
                     'planet': 'earth'
-                },
-                'id': '6ee15b26-4746-439b-878b-80789fa4506b'
+                }
             },
             'fulfillments': [
                 {
-                    'input': None,
                     'owners_before': [
-                        'DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'
+                        '88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'
                     ],
-                    'fulfillment': 'cf: 4: t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiCfrlhNlfqc5TUF9NmuWYRpZkRxFUNoFbObI6k0T5w6m9DgDyJGQU7iOJV2mefo40P_nNJuJmQWwlLXM02OIpwH',
+                    'input': None,
+                    'fulfillment': 'cf: 4: aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOR3YG0yWKNM4u7mFpOx1edsveEukMvN7FJeOKfr-H6YVlxpZU-qV5GxxOC7S0gaTw5U7F0my8BYvSoZxB_qt6wH',
                     'fid': 0
                 }
             ],
-            'operation': 'CREATE'
+            'conditions': [
+                {
+                    'owners_after': [
+                        '88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'
+                    ],
+                    'amount': 1,
+                    'condition': {
+                        'uri': 'cc: 4: 20: aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOQ: 96',
+                        'details': {
+                            'type_id': 4,
+                            'type': 'fulfillment',
+                            'signature': None,
+                            'public_key': '88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P',
+                            'bitmask': 32
+                        }
+                    },
+                    'cid': 0
+                }
+            ]
         },
-        'id': 'aec0c7d342b0c1354190b5f3ebe8b747df63398a1c59ec5be652b0f7fad53b8a'
+        'id': '4d36c0ac00f6c29c57c62ae80c9ff30695c0b49eaa4066ad7ffd8ae831f9647a',
+        'version': 1
+    },
+    {
+        'transaction': {
+            'asset': {
+                'updatable': False,
+                'id': '13f952aa-164f-479a-8de7-5c5615be9cf2',
+                'data': {
+                    'bicycle': {
+                        'manufacturer': 'bkfab',
+                        'serial_number': 'abcd1234'
+                    }
+                },
+                'divisible': False,
+                'refillable': False
+            },
+            'operation': 'CREATE',
+            'metadata': {
+                'id': '40979cee-4096-4157-8645-62bb07dfbab1',
+                'data': {
+                    'planet': 'earth'
+                }
+            },
+            'fulfillments': [
+                {
+                    'owners_before': [
+                        '7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'
+                    ],
+                    'input': None,
+                    'fulfillment': 'cf: 4: ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s0BHa4L0U4k7PiLXiI_aIxwi2kdj6kTKvxN-psMoe0kl8ZL60uGb_MIJUp3FKhFuIf5gBbz9sCDnUqVOGmm2IE',
+                    'fid': 0
+                }
+            ],
+            'conditions': [
+                {
+                    'owners_after': [
+                        '7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'
+                    ],
+                    'amount': 1,
+                    'condition': {
+                        'uri': 'cc: 4: 20: ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s: 96',
+                        'details': {
+                            'type_id': 4,
+                            'type': 'fulfillment',
+                            'signature': None,
+                            'public_key': '7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx',
+                            'bitmask': 32
+                        }
+                    },
+                    'cid': 0
+                }
+            ]
+        },
+        'id': 'b99858376a7a1d6283aaa55dab9b448a9b349f889be5053aa3c8a37d6425b57a',
+        'version': 1
     }
 ]
 
-rank 3 :Get block [{'id': '7858420600dc8adc991491e49d93006d38b9cdc655f62eacaa1a6b745e438231', 'transaction': {'fulfillments': [{'fid': 0, 'fulfillment': 'cf:4:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKodWMC0w9kkRFIvmw9AOSvTGdu4YR6KOYN_Y8oWsEinumNNpf8YD8mYPTn0zjzjA4iVnyh_9EKckbmOkED88YcF', 'owners_before': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs'], 'input': None}], 'conditions': [{'owners_after': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs'], 'amount': 1, 'cid': 0, 'condition': {'uri': 'cc:4:20:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKo:96', 'details': {'bitmask': 32, 'public_key': '3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs', 'type': 'fulfillment', 'signature': None, 'type_id': 4}}}], 'metadata': {'data': {'planet': 'earth'}, 'id': '372f2c14-fbbd-4cb5-90db-6713610f45e2'}, 'operation': 'CREATE', 'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'refillable': False, 'id': '5f811a71-a02e-45fd-82b2-e29264cc6c37'}}, 'version': 1}, {'id': '62f607164b394c540219996152e56235eee328add973d1d7ba82e161f4581430', 'transaction': {'fulfillments': [{'fid': 0, 'fulfillment': 'cf:4:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04_NngxF-Z9e4s8F78cLr7MZ4TVmO7ezS_WtZFJ2-3TjQWEHL_q36kB0BGW1KR6u3A8CUthRyTWEbFKjeoW9Q8I', 'owners_before': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw'], 'input': None}], 'conditions': [{'owners_after': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw'], 'amount': 1, 'cid': 0, 'condition': {'uri': 'cc:4:20:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04:96', 'details': {'bitmask': 32, 'public_key': 'C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw', 'type': 'fulfillment', 'signature': None, 'type_id': 4}}}], 'metadata': {'data': {'planet': 'earth'}, 'id': '5d072559-51c0-45e1-bf2f-a4b604b3cffb'}, 'operation': 'CREATE', 'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'refillable': False, 'id': '5108d68e-3386-487d-a5ca-bfcf068a7727'}}, 'version': 1}, {'id': '887f5ead6ab2ff82e6fd3b3089f787e15f422866e318343dd24213654837d85e', 'transaction': {'fulfillments': [{'fid': 0, 'fulfillment': 'cf:4:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlqskigHy3nfhHwW-1-PPjqbGdHkJk9kc5PLyIVLsdN5cnpHkfEXIXVMaJP90LPBmBKrXclHJNV1FERgaOMfLN0P', 'owners_before': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM'], 'input': None}], 'conditions': [{'owners_after': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM'], 'amount': 1, 'cid': 0, 'condition': {'uri': 'cc:4:20:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlo:96', 'details': {'bitmask': 32, 'public_key': 'G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM', 'type': 'fulfillment', 'signature': None, 'type_id': 4}}}], 'metadata': {'data': {'planet': 'earth'}, 'id': 'e8c51ce4-0ae7-4ff5-a591-6b5472332e23'}, 'operation': 'CREATE', 'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'refillable': False, 'id': '3df08a52-5cab-4697-83f0-b97b9f763a5f'}}, 'version': 1}, {'id': 'aec0c7d342b0c1354190b5f3ebe8b747df63398a1c59ec5be652b0f7fad53b8a', 'transaction': {'fulfillments': [{'fid': 0, 'fulfillment': 'cf:4:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiCfrlhNlfqc5TUF9NmuWYRpZkRxFUNoFbObI6k0T5w6m9DgDyJGQU7iOJV2mefo40P_nNJuJmQWwlLXM02OIpwH', 'owners_before': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'], 'input': None}], 'conditions': [{'owners_after': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'], 'amount': 1, 'cid': 0, 'condition': {'uri': 'cc:4:20:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiA:96', 'details': {'bitmask': 32, 'type_id': 4, 'type': 'fulfillment', 'signature': None, 'public_key': 'DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'}}}], 'metadata': {'data': {'planet': 'earth'}, 'id': '6ee15b26-4746-439b-878b-80789fa4506b'}, 'operation': 'CREATE', 'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'refillable': False, 'id': '16f0a24d-4c1c-4cfc-9ef9-37c3cdcbc390'}}, 'version': 1}]
+rank 3 :Get block [{'transaction': {'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'id': '1879d4ca-19a5-428c-8f5e-7f8f0d11df49'}, 'metadata': {'data': {'planet': 'earth'}, 'id': '9e1a50e0-e02e-4221-8094-5172b402a631'}, 'conditions': [{'cid': 0, 'condition': {'uri': 'cc:4:20:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslORM:96', 'details': {'public_key': '5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz', 'type_id': 4, 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'owners_after': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'], 'amount': 1}], 'fulfillments': [{'fid': 0, 'owners_before': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'], 'input': None, 'fulfillment': 'cf:4:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslOROyz3FLf64T9akgHcfAv6bNIeaBwiYqKXz7vJI7ar7CV8oQP25sp44TCzxZJBoomMBzNb1HQlL_zMhyHXnlGncN'}], 'operation': 'CREATE'}, 'id': '96d39280816bc7652e577a87c04546ce7ee11d4576f1ae3c07a422ac3ca1f684', 'version': 1}, {'transaction': {'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'id': '9560c113-3d61-48d6-b2d2-5d2d6bcc6c08'}, 'metadata': {'data': {'planet': 'earth'}, 'id': '1963095e-6615-4433-a434-e6504cdf8137'}, 'conditions': [{'cid': 0, 'condition': {'uri': 'cc:4:20:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeA:96', 'details': {'public_key': '2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR', 'type_id': 4, 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'owners_after': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'], 'amount': 1}], 'fulfillments': [{'fid': 0, 'owners_before': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'], 'input': None, 'fulfillment': 'cf:4:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeBtM7rHUTaxuEqZJE-ehxb-wMlEqhsvyHXEu7-745LPEfwDufuTqBOUThP4lhPXTUI8pXVWHnzq0DUFZTIgDNcC'}], 'operation': 'CREATE'}, 'id': '9aaec84aa0ce373793e132d7ab4d4df7cca60150deb6bca695888091c74c7f1b', 'version': 1}, {'transaction': {'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'id': '4bf8d2d2-fc8e-43b8-b851-3b3a5a8e1722'}, 'metadata': {'data': {'planet': 'earth'}, 'id': '01184ca5-9680-402e-ad89-c95145b2c6cb'}, 'conditions': [{'cid': 0, 'condition': {'uri': 'cc:4:20:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOQ:96', 'details': {'public_key': '88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P', 'type_id': 4, 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'owners_after': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'], 'amount': 1}], 'fulfillments': [{'fid': 0, 'owners_before': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'], 'input': None, 'fulfillment': 'cf:4:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOR3YG0yWKNM4u7mFpOx1edsveEukMvN7FJeOKfr-H6YVlxpZU-qV5GxxOC7S0gaTw5U7F0my8BYvSoZxB_qt6wH'}], 'operation': 'CREATE'}, 'id': '4d36c0ac00f6c29c57c62ae80c9ff30695c0b49eaa4066ad7ffd8ae831f9647a', 'version': 1}, {'transaction': {'asset': {'updatable': False, 'divisible': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'id': '13f952aa-164f-479a-8de7-5c5615be9cf2'}, 'metadata': {'data': {'planet': 'earth'}, 'id': '40979cee-4096-4157-8645-62bb07dfbab1'}, 'conditions': [{'cid': 0, 'condition': {'uri': 'cc:4:20:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s:96', 'details': {'public_key': '7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx', 'type_id': 4, 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'owners_after': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'], 'amount': 1}], 'fulfillments': [{'fid': 0, 'owners_before': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'], 'input': None, 'fulfillment': 'cf:4:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s0BHa4L0U4k7PiLXiI_aIxwi2kdj6kTKvxN-psMoe0kl8ZL60uGb_MIJUp3FKhFuIf5gBbz9sCDnUqVOGmm2IE'}], 'operation': 'CREATE'}, 'id': 'b99858376a7a1d6283aaa55dab9b448a9b349f889be5053aa3c8a37d6425b57a', 'version': 1}]
 rank 3 :Get votes {0, 2, 4, 6, 8, 10, 12}
-rank 0 :Get block [{'transaction': {'fulfillments': [{'fid': 0, 'input': None, 'fulfillment': 'cf:4:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKodWMC0w9kkRFIvmw9AOSvTGdu4YR6KOYN_Y8oWsEinumNNpf8YD8mYPTn0zjzjA4iVnyh_9EKckbmOkED88YcF', 'owners_before': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs']}], 'asset': {'updatable': False, 'refillable': False, 'id': '5f811a71-a02e-45fd-82b2-e29264cc6c37', 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'divisible': False}, 'operation': 'CREATE', 'conditions': [{'condition': {'details': {'type': 'fulfillment', 'bitmask': 32, 'signature': None, 'public_key': '3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs', 'type_id': 4}, 'uri': 'cc:4:20:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKo:96'}, 'cid': 0, 'amount': 1, 'owners_after': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs']}], 'metadata': {'id': '372f2c14-fbbd-4cb5-90db-6713610f45e2', 'data': {'planet': 'earth'}}}, 'id': '7858420600dc8adc991491e49d93006d38b9cdc655f62eacaa1a6b745e438231', 'version': 1}, {'transaction': {'fulfillments': [{'fid': 0, 'input': None, 'fulfillment': 'cf:4:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04_NngxF-Z9e4s8F78cLr7MZ4TVmO7ezS_WtZFJ2-3TjQWEHL_q36kB0BGW1KR6u3A8CUthRyTWEbFKjeoW9Q8I', 'owners_before': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw']}], 'asset': {'updatable': False, 'refillable': False, 'id': '5108d68e-3386-487d-a5ca-bfcf068a7727', 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}}, 'operation': 'CREATE', 'conditions': [{'condition': {'details': {'type': 'fulfillment', 'bitmask': 32, 'signature': None, 'public_key': 'C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw', 'type_id': 4}, 'uri': 'cc:4:20:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04:96'}, 'cid': 0, 'amount': 1, 'owners_after': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw']}], 'metadata': {'id': '5d072559-51c0-45e1-bf2f-a4b604b3cffb', 'data': {'planet': 'earth'}}}, 'id': '62f607164b394c540219996152e56235eee328add973d1d7ba82e161f4581430', 'version': 1}, {'transaction': {'fulfillments': [{'fid': 0, 'input': None, 'fulfillment': 'cf:4:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlqskigHy3nfhHwW-1-PPjqbGdHkJk9kc5PLyIVLsdN5cnpHkfEXIXVMaJP90LPBmBKrXclHJNV1FERgaOMfLN0P', 'owners_before': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM']}], 'asset': {'updatable': False, 'refillable': False, 'id': '3df08a52-5cab-4697-83f0-b97b9f763a5f', 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}}, 'operation': 'CREATE', 'conditions': [{'condition': {'details': {'type': 'fulfillment', 'bitmask': 32, 'signature': None, 'public_key': 'G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM', 'type_id': 4}, 'uri': 'cc:4:20:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlo:96'}, 'cid': 0, 'amount': 1, 'owners_after': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM']}], 'metadata': {'id': 'e8c51ce4-0ae7-4ff5-a591-6b5472332e23', 'data': {'planet': 'earth'}}}, 'id': '887f5ead6ab2ff82e6fd3b3089f787e15f422866e318343dd24213654837d85e', 'version': 1}, {'transaction': {'fulfillments': [{'fid': 0, 'input': None, 'fulfillment': 'cf:4:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiCfrlhNlfqc5TUF9NmuWYRpZkRxFUNoFbObI6k0T5w6m9DgDyJGQU7iOJV2mefo40P_nNJuJmQWwlLXM02OIpwH', 'owners_before': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3']}], 'asset': {'updatable': False, 'id': '16f0a24d-4c1c-4cfc-9ef9-37c3cdcbc390', 'refillable': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'divisible': False}, 'operation': 'CREATE', 'conditions': [{'condition': {'details': {'type': 'fulfillment', 'bitmask': 32, 'signature': None, 'public_key': 'DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3', 'type_id': 4}, 'uri': 'cc:4:20:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiA:96'}, 'cid': 0, 'amount': 1, 'owners_after': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3']}], 'metadata': {'id': '6ee15b26-4746-439b-878b-80789fa4506b', 'data': {'planet': 'earth'}}}, 'id': 'aec0c7d342b0c1354190b5f3ebe8b747df63398a1c59ec5be652b0f7fad53b8a', 'version': 1}]
+rank 3 time:0.128054s
+
+rank 0 :Get block [{'transaction': {'asset': {'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'divisible': False, 'refillable': False, 'updatable': False, 'id': '1879d4ca-19a5-428c-8f5e-7f8f0d11df49'}, 'conditions': [{'owners_after': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'], 'amount': 1, 'condition': {'details': {'type_id': 4, 'signature': None, 'public_key': '5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz', 'type': 'fulfillment', 'bitmask': 32}, 'uri': 'cc:4:20:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslORM:96'}, 'cid': 0}], 'metadata': {'data': {'planet': 'earth'}, 'id': '9e1a50e0-e02e-4221-8094-5172b402a631'}, 'fulfillments': [{'fulfillment': 'cf:4:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslOROyz3FLf64T9akgHcfAv6bNIeaBwiYqKXz7vJI7ar7CV8oQP25sp44TCzxZJBoomMBzNb1HQlL_zMhyHXnlGncN', 'input': None, 'owners_before': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'], 'fid': 0}], 'operation': 'CREATE'}, 'version': 1, 'id': '96d39280816bc7652e577a87c04546ce7ee11d4576f1ae3c07a422ac3ca1f684'}, {'transaction': {'asset': {'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'divisible': False, 'refillable': False, 'updatable': False, 'id': '9560c113-3d61-48d6-b2d2-5d2d6bcc6c08'}, 'conditions': [{'owners_after': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'], 'amount': 1, 'condition': {'details': {'type_id': 4, 'signature': None, 'public_key': '2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR', 'type': 'fulfillment', 'bitmask': 32}, 'uri': 'cc:4:20:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeA:96'}, 'cid': 0}], 'metadata': {'data': {'planet': 'earth'}, 'id': '1963095e-6615-4433-a434-e6504cdf8137'}, 'fulfillments': [{'fulfillment': 'cf:4:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeBtM7rHUTaxuEqZJE-ehxb-wMlEqhsvyHXEu7-745LPEfwDufuTqBOUThP4lhPXTUI8pXVWHnzq0DUFZTIgDNcC', 'input': None, 'owners_before': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'], 'fid': 0}], 'operation': 'CREATE'}, 'version': 1, 'id': '9aaec84aa0ce373793e132d7ab4d4df7cca60150deb6bca695888091c74c7f1b'}, {'transaction': {'asset': {'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'divisible': False, 'refillable': False, 'updatable': False, 'id': '4bf8d2d2-fc8e-43b8-b851-3b3a5a8e1722'}, 'conditions': [{'owners_after': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'], 'amount': 1, 'condition': {'details': {'type_id': 4, 'signature': None, 'public_key': '88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P', 'type': 'fulfillment', 'bitmask': 32}, 'uri': 'cc:4:20:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOQ:96'}, 'cid': 0}], 'metadata': {'data': {'planet': 'earth'}, 'id': '01184ca5-9680-402e-ad89-c95145b2c6cb'}, 'fulfillments': [{'fulfillment': 'cf:4:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOR3YG0yWKNM4u7mFpOx1edsveEukMvN7FJeOKfr-H6YVlxpZU-qV5GxxOC7S0gaTw5U7F0my8BYvSoZxB_qt6wH', 'input': None, 'owners_before': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'], 'fid': 0}], 'operation': 'CREATE'}, 'version': 1, 'id': '4d36c0ac00f6c29c57c62ae80c9ff30695c0b49eaa4066ad7ffd8ae831f9647a'}, {'transaction': {'asset': {'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'divisible': False, 'refillable': False, 'updatable': False, 'id': '13f952aa-164f-479a-8de7-5c5615be9cf2'}, 'conditions': [{'owners_after': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'], 'amount': 1, 'condition': {'details': {'type_id': 4, 'signature': None, 'public_key': '7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx', 'type': 'fulfillment', 'bitmask': 32}, 'uri': 'cc:4:20:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s:96'}, 'cid': 0}], 'metadata': {'data': {'planet': 'earth'}, 'id': '40979cee-4096-4157-8645-62bb07dfbab1'}, 'fulfillments': [{'fulfillment': 'cf:4:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s0BHa4L0U4k7PiLXiI_aIxwi2kdj6kTKvxN-psMoe0kl8ZL60uGb_MIJUp3FKhFuIf5gBbz9sCDnUqVOGmm2IE', 'input': None, 'owners_before': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'], 'fid': 0}], 'operation': 'CREATE'}, 'version': 1, 'id': 'b99858376a7a1d6283aaa55dab9b448a9b349f889be5053aa3c8a37d6425b57a'}]
 rank 0 :Get votes {0, 2, 4, 6, 8, 10, 12}
-rank 2 :Get block [{'transaction': {'metadata': {'data': {'planet': 'earth'}, 'id': '372f2c14-fbbd-4cb5-90db-6713610f45e2'}, 'conditions': [{'cid': 0, 'condition': {'details': {'signature': None, 'type_id': 4, 'public_key': '3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs', 'bitmask': 32, 'type': 'fulfillment'}, 'uri': 'cc:4:20:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKo:96'}, 'amount': 1, 'owners_after': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs']}], 'asset': {'refillable': False, 'id': '5f811a71-a02e-45fd-82b2-e29264cc6c37', 'divisible': False, 'updatable': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}}, 'operation': 'CREATE', 'fulfillments': [{'input': None, 'owners_before': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs'], 'fid': 0, 'fulfillment': 'cf:4:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKodWMC0w9kkRFIvmw9AOSvTGdu4YR6KOYN_Y8oWsEinumNNpf8YD8mYPTn0zjzjA4iVnyh_9EKckbmOkED88YcF'}]}, 'version': 1, 'id': '7858420600dc8adc991491e49d93006d38b9cdc655f62eacaa1a6b745e438231'}, {'transaction': {'metadata': {'data': {'planet': 'earth'}, 'id': '5d072559-51c0-45e1-bf2f-a4b604b3cffb'}, 'conditions': [{'cid': 0, 'condition': {'details': {'signature': None, 'type_id': 4, 'public_key': 'C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw', 'bitmask': 32, 'type': 'fulfillment'}, 'uri': 'cc:4:20:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04:96'}, 'amount': 1, 'owners_after': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw']}], 'asset': {'refillable': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'id': '5108d68e-3386-487d-a5ca-bfcf068a7727', 'updatable': False, 'divisible': False}, 'operation': 'CREATE', 'fulfillments': [{'input': None, 'owners_before': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw'], 'fid': 0, 'fulfillment': 'cf:4:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04_NngxF-Z9e4s8F78cLr7MZ4TVmO7ezS_WtZFJ2-3TjQWEHL_q36kB0BGW1KR6u3A8CUthRyTWEbFKjeoW9Q8I'}]}, 'version': 1, 'id': '62f607164b394c540219996152e56235eee328add973d1d7ba82e161f4581430'}, {'transaction': {'metadata': {'data': {'planet': 'earth'}, 'id': 'e8c51ce4-0ae7-4ff5-a591-6b5472332e23'}, 'conditions': [{'cid': 0, 'condition': {'details': {'signature': None, 'type_id': 4, 'public_key': 'G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM', 'bitmask': 32, 'type': 'fulfillment'}, 'uri': 'cc:4:20:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlo:96'}, 'amount': 1, 'owners_after': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM']}], 'asset': {'refillable': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'id': '3df08a52-5cab-4697-83f0-b97b9f763a5f', 'updatable': False, 'divisible': False}, 'operation': 'CREATE', 'fulfillments': [{'input': None, 'owners_before': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM'], 'fid': 0, 'fulfillment': 'cf:4:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlqskigHy3nfhHwW-1-PPjqbGdHkJk9kc5PLyIVLsdN5cnpHkfEXIXVMaJP90LPBmBKrXclHJNV1FERgaOMfLN0P'}]}, 'version': 1, 'id': '887f5ead6ab2ff82e6fd3b3089f787e15f422866e318343dd24213654837d85e'}, {'transaction': {'metadata': {'data': {'planet': 'earth'}, 'id': '6ee15b26-4746-439b-878b-80789fa4506b'}, 'conditions': [{'cid': 0, 'condition': {'details': {'signature': None, 'type_id': 4, 'public_key': 'DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3', 'bitmask': 32, 'type': 'fulfillment'}, 'uri': 'cc:4:20:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiA:96'}, 'amount': 1, 'owners_after': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3']}], 'asset': {'refillable': False, 'id': '16f0a24d-4c1c-4cfc-9ef9-37c3cdcbc390', 'divisible': False, 'updatable': False, 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}}, 'operation': 'CREATE', 'fulfillments': [{'input': None, 'owners_before': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'], 'fid': 0, 'fulfillment': 'cf:4:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiCfrlhNlfqc5TUF9NmuWYRpZkRxFUNoFbObI6k0T5w6m9DgDyJGQU7iOJV2mefo40P_nNJuJmQWwlLXM02OIpwH'}]}, 'version': 1, 'id': 'aec0c7d342b0c1354190b5f3ebe8b747df63398a1c59ec5be652b0f7fad53b8a'}]
+rank 0 time:0.148640s
+
+rank 2 :Get block [{'version': 1, 'transaction': {'fulfillments': [{'input': None, 'owners_before': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'], 'fulfillment': 'cf:4:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslOROyz3FLf64T9akgHcfAv6bNIeaBwiYqKXz7vJI7ar7CV8oQP25sp44TCzxZJBoomMBzNb1HQlL_zMhyHXnlGncN', 'fid': 0}], 'operation': 'CREATE', 'conditions': [{'owners_after': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'], 'cid': 0, 'condition': {'details': {'signature': None, 'bitmask': 32, 'type_id': 4, 'type': 'fulfillment', 'public_key': '5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'}, 'uri': 'cc:4:20:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslORM:96'}, 'amount': 1}], 'asset': {'updatable': False, 'id': '1879d4ca-19a5-428c-8f5e-7f8f0d11df49', 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'divisible': False}, 'metadata': {'id': '9e1a50e0-e02e-4221-8094-5172b402a631', 'data': {'planet': 'earth'}}}, 'id': '96d39280816bc7652e577a87c04546ce7ee11d4576f1ae3c07a422ac3ca1f684'}, {'version': 1, 'transaction': {'fulfillments': [{'input': None, 'owners_before': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'], 'fulfillment': 'cf:4:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeBtM7rHUTaxuEqZJE-ehxb-wMlEqhsvyHXEu7-745LPEfwDufuTqBOUThP4lhPXTUI8pXVWHnzq0DUFZTIgDNcC', 'fid': 0}], 'operation': 'CREATE', 'conditions': [{'owners_after': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'], 'cid': 0, 'condition': {'details': {'signature': None, 'bitmask': 32, 'type_id': 4, 'type': 'fulfillment', 'public_key': '2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'}, 'uri': 'cc:4:20:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeA:96'}, 'amount': 1}], 'asset': {'updatable': False, 'id': '9560c113-3d61-48d6-b2d2-5d2d6bcc6c08', 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'divisible': False}, 'metadata': {'id': '1963095e-6615-4433-a434-e6504cdf8137', 'data': {'planet': 'earth'}}}, 'id': '9aaec84aa0ce373793e132d7ab4d4df7cca60150deb6bca695888091c74c7f1b'}, {'version': 1, 'transaction': {'fulfillments': [{'input': None, 'owners_before': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'], 'fulfillment': 'cf:4:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOR3YG0yWKNM4u7mFpOx1edsveEukMvN7FJeOKfr-H6YVlxpZU-qV5GxxOC7S0gaTw5U7F0my8BYvSoZxB_qt6wH', 'fid': 0}], 'operation': 'CREATE', 'conditions': [{'owners_after': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'], 'cid': 0, 'condition': {'details': {'signature': None, 'bitmask': 32, 'type_id': 4, 'type': 'fulfillment', 'public_key': '88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'}, 'uri': 'cc:4:20:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOQ:96'}, 'amount': 1}], 'asset': {'updatable': False, 'id': '4bf8d2d2-fc8e-43b8-b851-3b3a5a8e1722', 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'divisible': False}, 'metadata': {'id': '01184ca5-9680-402e-ad89-c95145b2c6cb', 'data': {'planet': 'earth'}}}, 'id': '4d36c0ac00f6c29c57c62ae80c9ff30695c0b49eaa4066ad7ffd8ae831f9647a'}, {'version': 1, 'transaction': {'fulfillments': [{'input': None, 'owners_before': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'], 'fulfillment': 'cf:4:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s0BHa4L0U4k7PiLXiI_aIxwi2kdj6kTKvxN-psMoe0kl8ZL60uGb_MIJUp3FKhFuIf5gBbz9sCDnUqVOGmm2IE', 'fid': 0}], 'operation': 'CREATE', 'conditions': [{'owners_after': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'], 'cid': 0, 'condition': {'details': {'signature': None, 'bitmask': 32, 'type_id': 4, 'type': 'fulfillment', 'public_key': '7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'}, 'uri': 'cc:4:20:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s:96'}, 'amount': 1}], 'asset': {'updatable': False, 'id': '13f952aa-164f-479a-8de7-5c5615be9cf2', 'data': {'bicycle': {'manufacturer': 'bkfab', 'serial_number': 'abcd1234'}}, 'refillable': False, 'divisible': False}, 'metadata': {'id': '40979cee-4096-4157-8645-62bb07dfbab1', 'data': {'planet': 'earth'}}}, 'id': 'b99858376a7a1d6283aaa55dab9b448a9b349f889be5053aa3c8a37d6425b57a'}]
 rank 2 :Get votes {0, 2, 4, 6, 8, 10, 12}
-rank 1 :Get block [{'transaction': {'asset': {'refillable': False, 'updatable': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'id': '5f811a71-a02e-45fd-82b2-e29264cc6c37', 'divisible': False}, 'conditions': [{'owners_after': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs'], 'condition': {'uri': 'cc:4:20:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKo:96', 'details': {'signature': None, 'type_id': 4, 'bitmask': 32, 'public_key': '3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs', 'type': 'fulfillment'}}, 'cid': 0, 'amount': 1}], 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:JlgfX2AffsPWek6OcP4NI7adfHOtSwekwlh1kfz0EKodWMC0w9kkRFIvmw9AOSvTGdu4YR6KOYN_Y8oWsEinumNNpf8YD8mYPTn0zjzjA4iVnyh_9EKckbmOkED88YcF', 'fid': 0, 'owners_before': ['3agRrd5zP2keq5jQnVU6pfLFvXcjYK2ctqvFLPQxEcbs']}], 'operation': 'CREATE', 'metadata': {'data': {'planet': 'earth'}, 'id': '372f2c14-fbbd-4cb5-90db-6713610f45e2'}}, 'version': 1, 'id': '7858420600dc8adc991491e49d93006d38b9cdc655f62eacaa1a6b745e438231'}, {'transaction': {'asset': {'refillable': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'updatable': False, 'divisible': False, 'id': '5108d68e-3386-487d-a5ca-bfcf068a7727'}, 'conditions': [{'owners_after': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw'], 'condition': {'uri': 'cc:4:20:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04:96', 'details': {'signature': None, 'type_id': 4, 'bitmask': 32, 'public_key': 'C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw', 'type': 'fulfillment'}}, 'cid': 0, 'amount': 1}], 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:pbBJ8celMc2wUTHUcnXmscfZdwO0-ndIr4n0nDE5Z04_NngxF-Z9e4s8F78cLr7MZ4TVmO7ezS_WtZFJ2-3TjQWEHL_q36kB0BGW1KR6u3A8CUthRyTWEbFKjeoW9Q8I', 'fid': 0, 'owners_before': ['C9nBVUiPdQoNTd51RNMK2XHzFbMW589qMRFU9dwFpNFw']}], 'operation': 'CREATE', 'metadata': {'data': {'planet': 'earth'}, 'id': '5d072559-51c0-45e1-bf2f-a4b604b3cffb'}}, 'version': 1, 'id': '62f607164b394c540219996152e56235eee328add973d1d7ba82e161f4581430'}, {'transaction': {'asset': {'refillable': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'updatable': False, 'divisible': False, 'id': '3df08a52-5cab-4697-83f0-b97b9f763a5f'}, 'conditions': [{'owners_after': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM'], 'condition': {'uri': 'cc:4:20:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlo:96', 'details': {'signature': None, 'type_id': 4, 'bitmask': 32, 'public_key': 'G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM', 'type': 'fulfillment'}}, 'cid': 0, 'amount': 1}], 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:3w6YcUdmDNchncjjmkQNhXWfu4XxnhCreRbicekjSlqskigHy3nfhHwW-1-PPjqbGdHkJk9kc5PLyIVLsdN5cnpHkfEXIXVMaJP90LPBmBKrXclHJNV1FERgaOMfLN0P', 'fid': 0, 'owners_before': ['G1ipr1zrWBcdwtUtDhKm8DxvDh5tyqpEgD4Y15zT5TkM']}], 'operation': 'CREATE', 'metadata': {'data': {'planet': 'earth'}, 'id': 'e8c51ce4-0ae7-4ff5-a591-6b5472332e23'}}, 'version': 1, 'id': '887f5ead6ab2ff82e6fd3b3089f787e15f422866e318343dd24213654837d85e'}, {'transaction': {'asset': {'refillable': False, 'updatable': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}, 'id': '16f0a24d-4c1c-4cfc-9ef9-37c3cdcbc390', 'divisible': False}, 'conditions': [{'owners_after': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3'], 'condition': {'uri': 'cc:4:20:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiA:96', 'details': {'signature': None, 'type_id': 4, 'type': 'fulfillment', 'public_key': 'DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3', 'bitmask': 32}}, 'cid': 0, 'amount': 1}], 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:t40glmy_0IY9f-9U_ApWtF21gShBBvgsoj-aIc1bYiCfrlhNlfqc5TUF9NmuWYRpZkRxFUNoFbObI6k0T5w6m9DgDyJGQU7iOJV2mefo40P_nNJuJmQWwlLXM02OIpwH', 'fid': 0, 'owners_before': ['DMWRVuX5qYDvK6bjBkGWNQbbmJ4k5BfWriH2c89eVFQ3']}], 'operation': 'CREATE', 'metadata': {'data': {'planet': 'earth'}, 'id': '6ee15b26-4746-439b-878b-80789fa4506b'}}, 'version': 1, 'id': 'aec0c7d342b0c1354190b5f3ebe8b747df63398a1c59ec5be652b0f7fad53b8a'}]
+rank 2 time:0.137464s
+
+rank 1 :Get block [{'id': '96d39280816bc7652e577a87c04546ce7ee11d4576f1ae3c07a422ac3ca1f684', 'version': 1, 'transaction': {'metadata': {'id': '9e1a50e0-e02e-4221-8094-5172b402a631', 'data': {'planet': 'earth'}}, 'operation': 'CREATE', 'conditions': [{'owners_after': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz'], 'amount': 1, 'condition': {'uri': 'cc:4:20:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslORM:96', 'details': {'type_id': 4, 'public_key': '5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz', 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'cid': 0}], 'asset': {'id': '1879d4ca-19a5-428c-8f5e-7f8f0d11df49', 'refillable': False, 'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}}, 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:RdzOBlnP-eg1wibIklfJ-CgEsm66LlHz0YgyqaslOROyz3FLf64T9akgHcfAv6bNIeaBwiYqKXz7vJI7ar7CV8oQP25sp44TCzxZJBoomMBzNb1HQlL_zMhyHXnlGncN', 'fid': 0, 'owners_before': ['5hiQu2Jf9bXHhbXreLcYxPC1GyH4L97npm9rvwjXDccz']}]}}, {'id': '9aaec84aa0ce373793e132d7ab4d4df7cca60150deb6bca695888091c74c7f1b', 'version': 1, 'transaction': {'metadata': {'id': '1963095e-6615-4433-a434-e6504cdf8137', 'data': {'planet': 'earth'}}, 'operation': 'CREATE', 'conditions': [{'owners_after': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR'], 'amount': 1, 'condition': {'uri': 'cc:4:20:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeA:96', 'details': {'type_id': 4, 'public_key': '2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR', 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'cid': 0}], 'asset': {'id': '9560c113-3d61-48d6-b2d2-5d2d6bcc6c08', 'refillable': False, 'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}}, 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:FJXkCJ1SoovqFtveHpEMHz_2pIv8waWU4F4lbyqdGeBtM7rHUTaxuEqZJE-ehxb-wMlEqhsvyHXEu7-745LPEfwDufuTqBOUThP4lhPXTUI8pXVWHnzq0DUFZTIgDNcC', 'fid': 0, 'owners_before': ['2PMiegwgoqAfzxFs5wVJ6yiotSz2BggEjjKifjHpT5DR']}]}}, {'id': '4d36c0ac00f6c29c57c62ae80c9ff30695c0b49eaa4066ad7ffd8ae831f9647a', 'version': 1, 'transaction': {'metadata': {'id': '01184ca5-9680-402e-ad89-c95145b2c6cb', 'data': {'planet': 'earth'}}, 'operation': 'CREATE', 'conditions': [{'owners_after': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P'], 'amount': 1, 'condition': {'uri': 'cc:4:20:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOQ:96', 'details': {'type_id': 4, 'public_key': '88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P', 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'cid': 0}], 'asset': {'id': '4bf8d2d2-fc8e-43b8-b851-3b3a5a8e1722', 'refillable': False, 'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}}, 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:aeIjLq1BFq7sLgg1CHSmZuuwxlol6DM1d4zblI_pUOR3YG0yWKNM4u7mFpOx1edsveEukMvN7FJeOKfr-H6YVlxpZU-qV5GxxOC7S0gaTw5U7F0my8BYvSoZxB_qt6wH', 'fid': 0, 'owners_before': ['88KoiDUfJgjDbty6fGFpCfGzTPhCfYDVNLv9mJkF898P']}]}}, {'id': 'b99858376a7a1d6283aaa55dab9b448a9b349f889be5053aa3c8a37d6425b57a', 'version': 1, 'transaction': {'metadata': {'id': '40979cee-4096-4157-8645-62bb07dfbab1', 'data': {'planet': 'earth'}}, 'operation': 'CREATE', 'conditions': [{'owners_after': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx'], 'amount': 1, 'condition': {'uri': 'cc:4:20:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s:96', 'details': {'type_id': 4, 'public_key': '7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx', 'type': 'fulfillment', 'signature': None, 'bitmask': 32}}, 'cid': 0}], 'asset': {'id': '13f952aa-164f-479a-8de7-5c5615be9cf2', 'refillable': False, 'updatable': False, 'divisible': False, 'data': {'bicycle': {'serial_number': 'abcd1234', 'manufacturer': 'bkfab'}}}, 'fulfillments': [{'input': None, 'fulfillment': 'cf:4:ZXHTzUaw6YrcfBVvo9SaAmFNeedW9kewRdqIeLuye8s0BHa4L0U4k7PiLXiI_aIxwi2kdj6kTKvxN-psMoe0kl8ZL60uGb_MIJUp3FKhFuIf5gBbz9sCDnUqVOGmm2IE', 'fid': 0, 'owners_before': ['7pzr8B6EyHQzTtbLZjq4QSAdbaNbj23qqnJcTZCSq7Xx']}]}}]
 rank 1 :Get votes {0, 2, 4, 6, 8, 10, 12}
+rank 1 time:0.155984s
 ```
