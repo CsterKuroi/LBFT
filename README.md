@@ -24,20 +24,13 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
     |  rank = 0   |     |  rank = 1   |       |  rank = 2   |     |  rank = 3   |
     +-------------+     +-------------+       +-------------+     +-------------+  
 ```
+## Timeline
 
-## Quick Start
-requires = [
-   'Python 3.5+'
-   'MPICH2',
-   'mpi4py',
-   'bigchaindb-driver',
-   'bigchaindb',
-]
+1. (↑)The lv1 nodes create `txs`, pass them to the lv2 nodes, and the lv2 nodes pass them to the lv3 node
+2. (↓)The lv3 node creates a `block`, pass it to the lv2 nodes, and the lv2 nodes pass it to the lv1 nodes
+3. (↑)The lv1 nodes validate the block then create `votes`, pass them to the lv2 nodes, and the lv2 nodes pass them to the lv3 node
+4. (↓)The lv3 node collects all the votes as a `votelist`, pass it to the lv2 nodes, and the lv2 nodes pass it to the lv1 nodes .If more than 1/2 votes is valid, the node accepts the block.
 
-
-```
-mpirun -np 7 python3 tx124.py
-```
 
 ## Task List
 - [x] topology
@@ -67,6 +60,20 @@ mpirun -np 7 python3 tx124.py
 - [ ] data_storage
 
 - [ ] quota
+
+## Quick Start
+requires = [
+   'Python 3.5+'
+   'MPICH2',
+   'mpi4py',
+   'bigchaindb-driver',
+   'bigchaindb',
+]
+
+
+```
+mpirun -np 7 python3 tx124.py
+```
 
 ## Output
 ```
