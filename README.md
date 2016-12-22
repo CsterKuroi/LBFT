@@ -301,8 +301,9 @@ block: [
         'version': 1
     }
 ]
+```
 
-
+```
 votes: [
     {
         'vote': {
@@ -360,7 +361,9 @@ votes: [
         'signature': '46rs5AFiypCwjFtYbmVwbTZVHsZuwaoeFBkvZAjSV6ntNGTTD8XWEf8hToDy7ZyKnYmgCwcQHSAaHZQgQ3pr5P9J'
     }
 ]
+```
 
+```
 rank 3 time:0.111959s
 
 rank 0 time:0.148191s
