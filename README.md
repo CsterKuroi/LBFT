@@ -1,8 +1,7 @@
-# LBFT
+# LBFT [Proof of Concept]
 
 Layered BFT(Byzantine Fault Tolerant) Blockchain 
 
-[Proof of Concept]
 
 ## Topology
 ```
@@ -32,12 +31,12 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 4. (↓)The lv3 node collects all the votes as a `votelist`, pass it to the lv2 nodes, and the lv2 nodes pass it to the lv1 nodes .If more than 1/2 votes is valid, the node accepts the block.
 
 
-## Task List
+## TaskList
 - [x] topology
 
-- [x] Timeline
-
 - [x] data_transmission
+
+- [x] timeline
 
 - [x] create_tx
 
@@ -69,7 +68,7 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 
 - [ ] quota
 
-## Quick Start
+## QuickStart
 requires = [
    'Python 3.5+'
    'MPICH2',
@@ -82,6 +81,19 @@ requires = [
 ```
 mpirun -np 7 python3 core.py
 ```
+
+## Files
+### [`core.py`](./core.py)
+
+Topology;data_transmission;timeline
+
+### [`tx.py`](./tx.py)
+
+Create tx;validate tx
+
+### [`vote.py`](./vote.py)
+
+Create vote;verify vote;checks if there are enough votes on that block to declare it valid or invalid
 
 ## Output
 ```
