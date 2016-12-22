@@ -6,6 +6,7 @@ comm = MPI.COMM_WORLD
 comm_rank = comm.Get_rank()
 comm_size = comm.Get_size()
 
+"""
 group = comm.Get_group()
 group1 = group.Incl([0,4,5])
 group2 = group.Incl([1,4,5])
@@ -27,6 +28,7 @@ comm6 = comm.Create(group6)
 comm7 = comm.Create(group7)
 comm8 = comm.Create(group8)
 comm9 = comm.Create(group9)
+"""
 
 if 0<=comm_rank<=3:
     start = MPI.Wtime() 
@@ -37,13 +39,15 @@ if 0<=comm_rank<=3:
     data=comm.recv(source=4)
     data1=data
     data=comm.recv(source=5)
+
+    flag =True
     if data == data1:
         pass
-       # print ('rank %d :Get block'%comm_rank,data)
+        #print ('rank %d :Get block'%comm_rank,data)
         for ctx in data:
             if not tx.validate(ctx):
-                print('rank %d :InvalidSignature'%comm_rank)
-        myvote=v.vote(True)       
+                flag = False
+        myvote=v.vote(flag)       
         comm.send(myvote,dest=4)
         comm.send(myvote,dest=5)
 
@@ -71,10 +75,12 @@ if 4<=comm_rank<=5:
     comm.send(data,dest=1)
     comm.send(data,dest=2)
     comm.send(data,dest=3)
+
+    flag = True
     for ctx in data:
         if not tx.validate(ctx):
-            print('rank %d :InvalidSignature'%comm_rank)
-    comm.send(v.vote(True),dest=6)
+            flag = False
+    comm.send(v.vote(flag),dest=6)
 
     data=comm.recv(source=0)
     comm.send(data,dest=6)
@@ -117,17 +123,17 @@ if comm_rank == 6:
     print('block:',ids)
     comm.send(ids,dest=4)
     comm.send(ids,dest=5)
-
+    flag = True
     for ctx in ids:
         if not tx.validate(ctx):
-            print('rank %d :InvalidSignature'%comm_rank)
-    votes.append(v.vote(True))
+            flag = False
+    votes.append(v.vote(flag))
 
     data1=comm.recv(source=4)
     data=comm.recv(source=5)
-    if data == data1 :
-        votes.append(data)
-    
+    votes.append(data1)
+    votes.append(data)    
+
     data1=comm.recv(source=4)
     data=comm.recv(source=5)
     if data == data1 :
