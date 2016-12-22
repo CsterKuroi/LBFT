@@ -85,15 +85,20 @@ mpirun -np 7 python3 core.py
 ## Files
 ### [`core.py`](./core.py)
 
-Topology;data_transmission;timeline
+1. Topology
+2. data_transmission
+3. timeline
 
 ### [`tx.py`](./tx.py)
 
-Create tx;validate tx
+1. Create tx
+2. validate tx
 
 ### [`vote.py`](./vote.py)
 
-Create vote;verify vote;checks if there are enough votes on that block to declare it valid or invalid
+1. Create vote
+2. verify vote
+3. checks if there are enough votes on that block to declare it valid or invalid
 
 ## Output
 ```
