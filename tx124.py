@@ -1,5 +1,6 @@
 from mpi4py import MPI
 import tx
+import vote as v
 
 comm = MPI.COMM_WORLD
 comm_rank = comm.Get_rank()
@@ -35,44 +36,37 @@ if 0<=comm_rank<=3:
 
     data=comm.recv(source=4)
     data1=data
-#    print ('rank %d :receive from rank4'%comm_rank,data)
     data=comm.recv(source=5)
-#    print ('rank %d :receive from rank5'%comm_rank,data)
     if data == data1:
-        print ('rank %d :Get block'%comm_rank,data)
+        pass
+       # print ('rank %d :Get block'%comm_rank,data)
         for ctx in data:
             if not tx.validate(ctx):
                 print('rank %d :InvalidSignature'%comm_rank)
-                
-        comm.send([comm_rank*2],dest=4)
-        comm.send([comm_rank*2],dest=5)
+        myvote=v.vote(True)       
+        comm.send(myvote,dest=4)
+        comm.send(myvote,dest=5)
 
     data=comm.recv(source=4)
     data1=data
-#    print ('rank %d :receive from rank4'%comm_rank,data)
     data=comm.recv(source=5)
-#    print ('rank %d :receive from rank5'%comm_rank,data)
     if data == data1:
-        print ('rank %d :Get votes'%comm_rank,data)
+        pass
+        #print ('rank %d :Get votes'%comm_rank,data)
     stop = MPI.Wtime()
     print("rank %d time:%lfs\n"%(comm_rank,stop-start))
 
 if 4<=comm_rank<=5:
     data=comm.recv(source=0)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
     data=comm.recv(source=1)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
     data=comm.recv(source=2)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
     data=comm.recv(source=3)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
 
     data=comm.recv(source=6)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=0)
     comm.send(data,dest=1)
     comm.send(data,dest=2)
@@ -80,23 +74,18 @@ if 4<=comm_rank<=5:
     for ctx in data:
         if not tx.validate(ctx):
             print('rank %d :InvalidSignature'%comm_rank)
-    comm.send([comm_rank*2],dest=6)
+    comm.send(v.vote(True),dest=6)
 
     data=comm.recv(source=0)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
     data=comm.recv(source=1)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
     data=comm.recv(source=2)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
     data=comm.recv(source=3)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=6)
 
     data=comm.recv(source=6)
-#    print ('rank %d :receive'%comm_rank,data)
     comm.send(data,dest=0)
     comm.send(data,dest=1)
     comm.send(data,dest=2)
@@ -104,31 +93,24 @@ if 4<=comm_rank<=5:
 
 if comm_rank == 6:
     ids = []
+    votes = []
     data1=comm.recv(source=4)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
     if data == data1 :
         ids.append(data)
 
     data1=comm.recv(source=4)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
     if data == data1 :
         ids.append(data)
 
     data1=comm.recv(source=4)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
     if data == data1 :
         ids.append(data)
 
     data1=comm.recv(source=4)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
     data=comm.recv(source=5)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
     if data == data1 :
         ids.append(data)
 
@@ -139,45 +121,34 @@ if comm_rank == 6:
     for ctx in ids:
         if not tx.validate(ctx):
             print('rank %d :InvalidSignature'%comm_rank)
-    k=set([comm_rank*2])
+    votes.append(v.vote(True))
 
-    data=comm.recv(source=4)
-    a=set(data)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
+    data1=comm.recv(source=4)
     data=comm.recv(source=5)
-    b=set(data)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
-
-    data=comm.recv(source=4)
-    c=set(data)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
-    data=comm.recv(source=5)
-    d=set(data)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
-
-    data=comm.recv(source=4)
-    e=set(data)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
-    data=comm.recv(source=5)
-    f=set(data)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
-
-    data=comm.recv(source=4)
-    g=set(data)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
-    data=comm.recv(source=5)
-    h=set(data)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
+    if data == data1 :
+        votes.append(data)
     
-    data=comm.recv(source=4)
-    i=set(data)
-#    print ('rank %d :receive from rank4:'%comm_rank,data)
+    data1=comm.recv(source=4)
     data=comm.recv(source=5)
-    j=set(data)
-#    print ('rank %d :receive from rank5:'%comm_rank,data)
-    
+    if data == data1 :
+        votes.append(data)
 
-    data=a|b|c|d|e|f|g|h|i|j|k
-#    print('votes:',data)
+    data1=comm.recv(source=4)
+    data=comm.recv(source=5)
+    if data == data1 :
+        votes.append(data)
+
+    data1=comm.recv(source=4)
+    data=comm.recv(source=5)
+    if data == data1 :
+        votes.append(data)
+
+    data1=comm.recv(source=4)
+    data=comm.recv(source=5)
+    if data == data1 :
+        votes.append(data)
+
+    data = votes
+    print('votes:',data)
     comm.send(data,dest=4)
     comm.send(data,dest=5)
