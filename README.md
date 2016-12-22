@@ -308,59 +308,81 @@ block: [
 ```
 votes: [
     {
+        'signature': '4AJ7qUU6CkAxW2ipTPBviuaVn9e7waKE4hah56u4cbwVmcEhH6miYSqZfrG7JnHQQj8zoNk7QnjDkW7gfe9BmfC',
         'vote': {
-            'timestamp': '1482408347',
-            'is_block_valid': True,
             'invalid_reason': None,
+            'voting_for_block': '1',
             'previous_block': 'Genesis',
-            'voting_for_block': '1'
+            'is_block_valid': True,
+            'timestamp': '1482410513'
         },
-        'node_pubkey': 'C8A4Q7WqcPzRBhP6THMERGXHZpECyb4NpjdfCGH8g7hq',
-        'signature': '5mShzaP3PHMNwJ6LirU8yYQiRCc6sBr1noFoKdHiNFxghvuwZYeGyYzx4puGTASYHBgBPzbwBRjwQXqoCkCPYpgy'
+        'node_pubkey': 'FxhfnvpiZbyYPLFz1cD8kdbeNVmHmM8tFcqCrFzLuri'
     },
     {
         'vote': {
-            'timestamp': '1482408347',
-            'is_block_valid': True,
             'invalid_reason': None,
+            'voting_for_block': '1',
+            'is_block_valid': True,
             'previous_block': 'Genesis',
-            'voting_for_block': '1'
+            'timestamp': '1482410513'
         },
-        'node_pubkey': '8zZM6s6fmzsBYaEFYgqwRAotYJjcEyL4dyPo3bXTQpt1',
-        'signature': '1216Ea1xeJnNdcbfcykxjEuRrtvVwFwoCabRyF9Gj6xdNxBU6maArnCKWz4cm5kU4ZTVJwP9WtbNTFAWQU8yK3pi'
+        'signature': '3ujTJXzYvKBWMDTQgiDBdyNPcxhF2Mr5oTYMJVUAoFJAUZXi7qhVsfQ6q6brdHMy3ykWBbq5mJo8ToXCHYS2ra6h',
+        'node_pubkey': 'HcNPQ25G2qsSytbegM3fbEscPyXhvG64cDVXhzRTXsMF'
     },
     {
+        'signature': '2HzioaYPVgKcsYF9BYHZhtXU2Wm6Xm5fyneybrapsHQF9597GKzLNkzYHTm6CTMzwaa3yrCrRgeFbx7LCsfMiZ6',
         'vote': {
-            'timestamp': '1482408347',
-            'previous_block': 'Genesis',
             'invalid_reason': None,
+            'voting_for_block': '1',
             'is_block_valid': True,
-            'voting_for_block': '1'
+            'previous_block': 'Genesis',
+            'timestamp': '1482410513'
         },
-        'node_pubkey': 'FoR36wY9W4zgFL69LhwfSmgtVyvG21MQNdYP4YgWyggK',
-        'signature': '47DP4nbJ48ixWyto3vvwc5tQDBx4rAEMeZfTUGvnAqWaGMuQ6x8nErQK7ApVpuknScoDiPxYeCRBVyRKDAuG551p'
+        'node_pubkey': '3GfvMY1JY6T3nDzevPmXViE1MtXd7JpGDXamvTKTZTom'
     },
     {
+        'signature': '8rC3q1Ac5hsQsBZpKNUN6rxh9BtZenfeUWDv8xgYZtVZ8S8udm7SGK8XfLbetm5VAfqC5Y34ahktzhumKccUr77',
         'vote': {
-            'timestamp': '1482408347',
-            'is_block_valid': True,
             'invalid_reason': None,
+            'voting_for_block': '1',
             'previous_block': 'Genesis',
-            'voting_for_block': '1'
+            'is_block_valid': True,
+            'timestamp': '1482410513'
         },
-        'node_pubkey': 'EZWddJACrgYoz1LaeRref3hsjhFgcybPqVoVwX2bHbi9',
-        'signature': 'Xq9EG5ShEwxWBFp8DLA9KkP8AwUphVbTatXagtuq6sydetxWPQGFKvyDqxgSHdPxqeSLFfzBNFSqjSfE78mgJVR'
+        'node_pubkey': '3AVtrmkNi3nUzqueec7kGgr8Am11AbCxQStAyCc3kjWw'
     },
     {
+        'signature': '33rzqqtymgwj6VD3p5d3M8mFC9LjVcX47D3duJE3Jkhkg72TZaCrgYtWq5fVemNrr2R9TD65RmuhVPMQYBTBMp2o',
         'vote': {
-            'timestamp': '1482408347',
-            'previous_block': 'Genesis',
             'invalid_reason': None,
+            'voting_for_block': '1',
             'is_block_valid': True,
-            'voting_for_block': '1'
+            'previous_block': 'Genesis',
+            'timestamp': '1482410513'
         },
-        'node_pubkey': '51DdsFjDBysVMtSYsUfsgwHMVp78ZCCLd2xFBn7K2KoU',
-        'signature': '46rs5AFiypCwjFtYbmVwbTZVHsZuwaoeFBkvZAjSV6ntNGTTD8XWEf8hToDy7ZyKnYmgCwcQHSAaHZQgQ3pr5P9J'
+        'node_pubkey': '5UMMbgr4YhJbjXYtu8AkZFXSvJwHM6qLXJYMS2Cn9Ftw'
+    },
+    {
+        'signature': '2Spg7LQ9VHQbBwwLJYXuhPaegEJZ7dFznsfivEyQZhPr3NH9C9wHjpgtfMuLEENZPM1mUdQsuSZ9AXaRcmnvimGT',
+        'vote': {
+            'invalid_reason': None,
+            'voting_for_block': '1',
+            'is_block_valid': True,
+            'previous_block': 'Genesis',
+            'timestamp': '1482410513'
+        },
+        'node_pubkey': 'Ao1gzjqs9T5JGWqoh2MH6SmykV2coFJsKCAofP7dyMvY'
+    },
+    {
+        'signature': '28JuaMyUdrM13Zo6sEQpogdjpC7ZCJh35DrptU3evEkfFeYHyBL14txMCHRUCvNiMn8y4TrXpW6Y5aGADvf91LgB',
+        'vote': {
+            'invalid_reason': None,
+            'voting_for_block': '1',
+            'is_block_valid': True,
+            'previous_block': 'Genesis',
+            'timestamp': '1482410513'
+        },
+        'node_pubkey': 'HZaVUaq8aFs3WT9vbnGgoSXfAKgbJ1G5uSHzPTtvhSBM'
     }
 ]
 ```
