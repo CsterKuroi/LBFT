@@ -45,11 +45,13 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 
 - [x] validate_tx_signature
 
-- [x] create_block
+- [x] tx_list
 
-- [ ] block_chain
+- [ ] block_hash
 
 - [ ] validate_block
+
+- [ ] block_chain
 
 - [ ] node_keypairs
 
@@ -57,7 +59,7 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 
 - [x] votes_list
 
-- [ ] vote_signature
+- [x] vote_signature
 
 - [ ] verify_vote_signature
 
