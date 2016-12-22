@@ -301,7 +301,9 @@ block: [
         'version': 1
     }
 ]
-: [
+
+
+votes: [
     {
         'vote': {
             'timestamp': '1482408347',
