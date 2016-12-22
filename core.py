@@ -121,7 +121,7 @@ if comm_rank == 6:
     if data == data1 :
         ids.append(data)
 
-    #print('block:',ids)
+    print('block:',ids)
     comm.send(ids,dest=4)
     comm.send(ids,dest=5)
     flag = True
