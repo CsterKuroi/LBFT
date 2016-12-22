@@ -2,6 +2,19 @@
 
 Layered BFT(Byzantine Fault Tolerant) Blockchain 
 
+## Requires
+
+1. 'Python 3.5+'
+2. 'MPICH2'
+3. 'mpi4py'
+4. 'bigchaindb-driver'
+5. 'bigchaindb'
+
+## QuickStart
+
+```
+mpirun -np 7 python3 core.py
+```
 
 ## Topology
 ```
@@ -68,19 +81,6 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 
 - [ ] quota
 
-## QuickStart
-requires = [
-   'Python 3.5+'
-   'MPICH2',
-   'mpi4py',
-   'bigchaindb-driver',
-   'bigchaindb',
-]
-
-
-```
-mpirun -np 7 python3 core.py
-```
 
 ## Files
 ### [`core.py`](./core.py)
