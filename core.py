@@ -18,7 +18,6 @@ group7 = group.Incl([6,4,5])
 group8 = group.Incl([4,0,1,2,3])
 group9 = group.Incl([5,0,1,2,3])
 
-comm_size = comm.Get_size()
 comm1 = comm.Create(group1)
 comm2 = comm.Create(group2)
 comm3 = comm.Create(group3)
@@ -43,7 +42,7 @@ if 0<=comm_rank<=3:
     flag =True
     if data == data1:
         pass
-        print ('rank %d :Get block'%comm_rank,data)
+       #print ('rank %d :Get block'%comm_rank,data)
         for ctx in data:
             if not tx.validate(ctx):
                 flag = False
@@ -56,7 +55,8 @@ if 0<=comm_rank<=3:
     data=comm.recv(source=5)
     if data == data1:
         pass
-        print ('rank %d :Get votes'%comm_rank,data)
+        #print ('rank %d :Get votes'%comm_rank,data)
+        print('rank %d:'%comm_rank,v.election(comm_size,data))
     stop = MPI.Wtime()
     print("rank %d time:%lfs\n"%(comm_rank,stop-start))
 
@@ -96,6 +96,7 @@ if 4<=comm_rank<=5:
     comm.send(data,dest=1)
     comm.send(data,dest=2)
     comm.send(data,dest=3)
+    print('rank %d:'%comm_rank,v.election(comm_size,data))
 
 if comm_rank == 6:
     ids = []
@@ -120,7 +121,7 @@ if comm_rank == 6:
     if data == data1 :
         ids.append(data)
 
-    print('block:',ids)
+    #print('block:',ids)
     comm.send(ids,dest=4)
     comm.send(ids,dest=5)
     flag = True
@@ -154,7 +155,7 @@ if comm_rank == 6:
     if data == data1 :
         votes.append(data)
 
-    data = votes
-    print('votes:',data)
-    comm.send(data,dest=4)
-    comm.send(data,dest=5)
+    print('votes:',votes)
+    comm.send(votes,dest=4)
+    comm.send(votes,dest=5)
+    print('rank %d:'%comm_rank,v.election(comm_size,votes))

@@ -61,7 +61,7 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 
 - [x] vote_signature
 
-- [ ] verify_vote_signature
+- [x] verify_vote_signature
 
 - [ ] scalability
 
@@ -80,7 +80,7 @@ requires = [
 
 
 ```
-mpirun -np 7 python3 tx124.py
+mpirun -np 7 python3 core.py
 ```
 
 ## Output
@@ -388,11 +388,18 @@ votes: [
 ```
 
 ```
-rank 3 time:0.111959s
+rank 6: ['VALID', 7, 7]
+rank 5: ['VALID', 7, 7]
+rank 2: ['VALID', 7, 7]
+rank 2 time:0.366696s
 
-rank 0 time:0.148191s
+rank 4: ['VALID', 7, 7]
+rank 0: ['VALID', 7, 7]
+rank 0 time:0.440076s
 
-rank 2 time:0.135983s
+rank 3: ['VALID', 7, 7]
+rank 3 time:0.322589s
 
-rank 1 time:0.144461s
+rank 1: ['VALID', 7, 7]
+rank 1 time:0.295617s
 ```
