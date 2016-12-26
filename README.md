@@ -420,3 +420,7 @@ rank 3 time:0.322589s
 rank 1: ['VALID', 7, 7]
 rank 1 time:0.295617s
 ```
+
+## Links
+* [bigchaindb](https://github.com/bigchaindb/bigchaindb)
+* [mpi4py](https://github.com/mpi4py/mpi4py)
