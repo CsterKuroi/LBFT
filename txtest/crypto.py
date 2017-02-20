@@ -1,10 +1,14 @@
 from collections import namedtuple
 
+import sha3
 from cryptoconditions import crypto
 
 
 CryptoKeypair = namedtuple('CryptoKeypair', ('private_key', 'public_key'))
 
+def hash_data(data):
+    """Hash the provided data using SHA3-256"""
+    return sha3.sha3_256(data.encode()).hexdigest()
 
 def generate_keypair():
     """Generates a cryptographic key pair.
