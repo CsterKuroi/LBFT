@@ -7,7 +7,7 @@ from bigchaindb import Bigchain
 def get():
     # get tx by id
     b = Bigchain()
-    tx_id = 'd42ea9c8e926f91f1f922e30a1c84e1a92f100e935c4b0e42338719e42e494dd'    
+    tx_id = 'f457fd453607419aff5eb808b81e990fc8a21e99381627c52331a696aa9be34e'    
     tx = b.get_transaction(tx_id)
     return tx.to_dict()
 
