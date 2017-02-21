@@ -49,7 +49,7 @@ def bft():
 
     print("tamper_block status         : ",b.block_election_status(block_id,block_voters))
     print("blocks_status_containing_tx : ",b.get_blocks_status_containing_tx(tx_id))
-    print("wait for 30 sec             : ")
+    print("wait for 15 sec             : ")
     sleep(15)
     print("blocks_status_containing_tx : ",b.get_blocks_status_containing_tx(tx_id))
     print(" ")
