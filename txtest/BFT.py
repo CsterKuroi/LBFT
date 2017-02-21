@@ -32,23 +32,25 @@ def bft():
     print("valid block       timestamp : ",block.to_dict()['block']['timestamp'])
     # tamper block
     block.timestamp = '1'
-    print("tamper block.timestamp to   : '1'")
+    print("tamper block.timestamp to 1 : ")
     block_id = block.to_dict()['id']
     block_voters = block.to_dict()['block']['voters']
 
     print("invalid block     timestamp : ",block.to_dict()['block']['timestamp'])
     print("tamper_block_id             : ",block_id)
     
-    #TODO
-    # create vote
+    print("db response of block        : ",b.write_block(block))
+    sleep(2)
+
     last_voted_id = b.get_last_voted_block().id
     vote = b.vote(block_id,last_voted_id, True)
     print("crate vote 'True'           : ",vote)
     print("db response of vote         : ",b.write_vote(vote))
-    sleep(2)
-    print("db response of block        : ",b.write_block(block))
-    sleep(2)
+
     print("tamper_block status         : ",b.block_election_status(block_id,block_voters))
+    print("blocks_status_containing_tx : ",b.get_blocks_status_containing_tx(tx_id))
+    print("wait for 30 sec             : ")
+    sleep(30)
     print("blocks_status_containing_tx : ",b.get_blocks_status_containing_tx(tx_id))
     print(" ")
 
