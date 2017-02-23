@@ -16,7 +16,7 @@ def create_double():
     metadata = {'planet': 'earth'}
 
     # create trnsaction  TODO : owners_before might be node_pubkey in v0.8.0
-    tx = Transaction.create([alice.public_key], [alice.public_key], metadata = metadata, asset = asset)
+    tx = Transaction.create([alice.public_key], [([alice.public_key],1)], metadata = metadata, asset = asset)
     print(" ")
     print("1.tx_create asset id    :  alice-----bicycle(",tx.to_dict()['transaction']['asset']['id'],")----->alice")
     print("1.tx_create tx id       : ",tx.to_dict()['id'])
@@ -52,7 +52,7 @@ def create_double():
     asset = Asset.from_dict(tx.to_dict()['transaction']['asset'])
 
     # transfer
-    tx1 = Transaction.transfer([inputs], [bob.public_key],asset)
+    tx1 = Transaction.transfer([inputs], [([bob.public_key],1)],asset)
     print("2.tx_transfer asset id    :  alice-----bicycle(",tx1.to_dict()['transaction']['asset']['id'],")----->bob")
     print("2.tx_transfer tx id       : ",tx1.to_dict()['id'])
 
@@ -87,7 +87,7 @@ def create_double():
     asset = Asset.from_dict(tx.to_dict()['transaction']['asset'])
 
     # transfer
-    tx1 = Transaction.transfer([inputs], [bob.public_key],asset)
+    tx1 = Transaction.transfer([inputs], [([bob.public_key],1)],asset)
     print("3.tx_double asset id    :  alice-----bicycle(",tx1.to_dict()['transaction']['asset']['id'],")----->bob")
     print("3.tx_double tx id       : ",tx1.to_dict()['id'])
 

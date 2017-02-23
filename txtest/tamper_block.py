@@ -16,7 +16,7 @@ def tamper_block():
     metadata = {'planet': 'earth'}
 
     # create trnsaction  TODO : owners_before might be node_pubkey in v0.8.0
-    tx = Transaction.create([alice.public_key], [alice.public_key], metadata = metadata, asset = asset)
+    tx = Transaction.create([alice.public_key], [([alice.public_key],1)], metadata = metadata, asset = asset)
     
     # sign with private key
     tx = tx.sign([alice.private_key])
