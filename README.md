@@ -4,11 +4,11 @@ Layered BFT(Byzantine Fault Tolerant) Blockchain
 
 ## Requires
 
-1. 'Python 3.5+'
-2. 'MPICH2'
-3. 'mpi4py'
-4. 'bigchaindb-driver'
-5. 'bigchaindb'
+1. `Python 3.5+`
+2. `MPICH2`
+3. `mpi4py`
+4. `bigchaindb-driver`
+5. `bigchaindb`
 
 ## QuickStart
 
